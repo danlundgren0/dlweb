@@ -1,0 +1,50 @@
+
+plugin.tx_dluserfiles_userfiles {
+	view {
+		templateRootPaths.0 = {$plugin.tx_dluserfiles_userfiles.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_dluserfiles_userfiles.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_dluserfiles_userfiles.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_dluserfiles_userfiles.persistence.storagePid}
+		recursive = 99
+	}
+	customers {
+		parentCategoryId = {$plugin.tx_dluserfiles_userfiles.customers.parentCategoryId}
+		parentCustomerFolder = {$plugin.tx_dluserfiles_userfiles.customers.parentCustomerFolder}
+	}
+}
+
+plugin.tx_dluserfiles._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-dl-userfiles table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-dl-userfiles table th {
+		font-weight:bold;
+	}
+
+	.tx-dl-userfiles table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)

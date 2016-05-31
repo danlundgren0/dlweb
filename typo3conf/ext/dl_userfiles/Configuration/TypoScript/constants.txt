@@ -1,0 +1,21 @@
+
+plugin.tx_dluserfiles_userfiles {
+	view {
+		# cat=plugin.tx_dluserfiles_userfiles/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:dl_userfiles/Resources/Private/Templates/
+		# cat=plugin.tx_dluserfiles_userfiles/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:dl_userfiles/Resources/Private/Partials/
+		# cat=plugin.tx_dluserfiles_userfiles/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:dl_userfiles/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_dluserfiles_userfiles//a; type=string; label=Default storage PID
+		storagePid =
+	}
+	customers {
+		# cat=plugin.tx_dluserfiles_userfiles//b; type=string; label=Parent category for userCategories
+		parentCategoryId =
+		# cat=plugin.tx_dluserfiles_userfiles//c; type=string; label=Parent Folder for userFolders
+		parentCustomerFolder =
+	}
+}

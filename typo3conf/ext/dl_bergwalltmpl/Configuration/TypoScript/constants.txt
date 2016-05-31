@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dl_bergwalltmpl/Configuration/TypoScript/Includes/Constants.ts">

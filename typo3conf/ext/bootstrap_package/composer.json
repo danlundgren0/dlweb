@@ -1,0 +1,45 @@
+{
+  "name": "bk2k/bootstrap-package",
+  "type": "typo3-cms-extension",
+  "description": "Bootstrap Package delivers a full configured frontend theme for TYPO3, based on the Bootstrap CSS Framework.",
+  "keywords": [
+    "TYPO3 CMS",
+    "introduction",
+    "sitepackage",
+    "bootstrap",
+    "responsive",
+    "front-end",
+    "web"
+  ],
+  "homepage": "https://github.com/benjaminkott/bootstrap_package",
+  "authors": [
+    {
+      "name": "Benjamin Kott",
+      "email": "info@bk2k.info",
+      "role": "Developer",
+      "homepage": "http://www.bk2k.info/"
+    }
+  ],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/benjaminkott/bootstrap_package/issues"
+  },
+  "version": "7.0.0-dev",
+  "require-dev": {
+    "squizlabs/php_codesniffer": "2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "BK2K\\BootstrapPackage\\": "Classes"
+    }
+  },
+  "replace": {
+    "bootstrap_package": "self.version",
+    "typo3-ter/bootstrap-package": "self.version"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "7.0.x-dev"
+    }
+  }
+}

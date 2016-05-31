@@ -1,0 +1,98 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<f:flashMessages />
+<f:if condition="{customerFiles}">
+	<f:for each="{customerFiles}" as="customerFile">
+		<div class="tx_dluserfiles"><a href="{customerFile.path}">{customerFile.name}</a></div>
+	</f:for>
+</f:if>
+<f:if condition="{customerSubFiles}">
+	<div role="tabpanel" id="tab-262">
+		<ul class="nav nav-tabs" role="tablist">
+			<f:for each="{customerSubFiles}" as="customerFile" iteration="itemIteration">
+				<f:if condition="{customerFile.subDirName}">
+					<f:then>
+						<f:if condition="{itemIteration.isFirst}">
+							<f:then>
+								<li role="presentation" class="active">
+									<a data-toggle="tab"
+										href="#tab-{customerFile.subDirName}"
+										role="tab"
+										aria-controls="tab-{customerFile.subDirName}" aria-expanded="true">
+										{customerFile.subDirName}
+									</a>
+								</li>
+							</f:then>
+							<f:else>
+								<li role="presentation">
+									<a data-toggle="tab"
+										href="#tab-{customerFile.subDirName}"
+										role="tab"
+										aria-controls="tab-{customerFile.subDirName}" aria-expanded="true">
+										{customerFile.subDirName}
+									</a>
+								</li>
+							</f:else>
+						</f:if>
+					</f:then>
+				</f:if>
+			</f:for>
+		</ul>
+		<div class="tab-content">
+			<f:for each="{customerSubFiles}" as="customerFile" iteration="itemIteration">
+				<f:if condition="{customerFile.subDirName}">
+					<f:then>
+						<f:if condition="{itemIteration.index} > 0">
+							</div>
+		          				<div class="col-md-6">
+		            				<p>&nbsp;</p>
+		          				</div>
+		        		</div>
+		      		</div>
+						</f:if>
+					</f:then>
+				</f:if>
+				<f:if condition="{customerFile.subDirName}">
+					<f:then>
+						<f:if condition="{itemIteration.isFirst}">
+							<f:then>
+								<div role="tabpanel" class="tab-pane active" id="tab-{customerFile.subDirName}">
+							        <div class="row">
+							        	<div class="col-md-6">
+							</f:then>
+							<f:else>
+								<div role="tabpanel" class="tab-pane" id="tab-{customerFile.subDirName}">
+							        <div class="row">
+							        	<div class="col-md-6">
+							</f:else>
+						</f:if>
+					</f:then>
+
+				</f:if>
+				<div class="tx_dluserfiles"><a href="{customerFile.path}">{customerFile.name}</a></div>
+				<f:if condition="{itemIteration.isLast}">
+							</div>
+		          				<div class="col-md-6">
+		            				<p>&nbsp;</p>
+		          				</div>
+		        		</div>
+		      		</div>
+				</f:if>
+			</f:for>
+		</div>
+	</div>
+</f:if>
+</f:section>

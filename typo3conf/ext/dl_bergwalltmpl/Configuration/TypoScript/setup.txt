@@ -1,0 +1,3 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dl_bergwalltmpl/Configuration/TypoScript/Includes/Page.ts">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dl_bergwalltmpl/Configuration/TypoScript/Includes/ContentElements/Button.ts">

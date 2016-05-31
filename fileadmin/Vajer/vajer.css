@@ -1,0 +1,125 @@
+.powermail_legend {
+  
+}
+.powermail_label {
+  
+}
+.powermail_fieldwrap label {
+ width: 17%; 
+}
+.powermail_fieldwrap input, .powermail_fieldwrap textarea{
+ width: 27%; 
+}
+.powermail_fieldwrap input.btn {
+ width:inherit;
+ margin-left: 17.5%; 
+}
+@media (max-width: 400px) {
+  .powermail_fieldwrap label {
+   width: 49%; 
+  }
+  .powermail_fieldwrap input, .powermail_fieldwrap textarea{
+   width: 49%; 
+  }
+  .powermail_fieldwrap input.btn {
+   width:inherit;
+   margin-left: 49.5%; 
+  }
+}
+body h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  color:#555555;
+}
+body h2 {
+  font-family: 'Open Sans', sans-serif;  
+  font-size: 30px;  
+  font-weight: 400;
+  color:#555555;
+}
+body h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  color:#555555;
+}
+body h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  color:#555555;
+}
+body h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color:#555555;
+}
+body h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color:#555555;
+}
+footer h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  color:#ffffff;
+  border-bottom:1px solid #69c7ef;
+  padding-bottom: 10px;
+}
+footer h2 {
+  font-family: 'Open Sans', sans-serif;  
+  font-size: 30px;  
+  font-weight: 400;
+  color:#ffffff;
+  border-bottom:1px solid #69c7ef;
+  padding-bottom: 10px;
+}
+footer h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  color:#ffffff;
+  border-bottom:1px solid #69c7ef;
+  padding-bottom: 10px;
+}
+footer h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color:#ffffff;
+  border-bottom:1px solid #69c7ef;
+  padding-bottom: 10px;
+}
+footer h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color:#ffffff;
+  border-bottom:1px solid #69c7ef;
+  padding-bottom: 10px;
+}
+footer h6 {
+  color:#ffffff;
+  border-bottom:1px solid #69c7ef;
+  padding-bottom: 10px;
+}
+body li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+body p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color:#454545;
+}
+body a {
+  color:#309fde;
+  font-size: 14px;
+  font-weight: 300;
+  color:#309fde;
+}

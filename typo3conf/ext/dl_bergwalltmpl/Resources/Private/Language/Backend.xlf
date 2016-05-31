@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z"
+          product-name="bootstrap_package">
+        <header/>
+        <body>
+            <trans-unit id="theme_name">
+                <source>Dans Bootstrap</source>
+            </trans-unit>
+            <trans-unit id="content_element.button">
+                <source>Button</source>
+            </trans-unit>
+            <trans-unit id="content_element.button.description">
+                <source>Insert button</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.bergwall_start">
+                <source>Bergwall Startpage</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.border">
+                <source>Border</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.left">
+                <source>Left</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.right">
+                <source>Right</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.middle1">
+                <source>Item: First</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.middle2">
+                <source>Item: Second</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.middle3">
+                <source>Item: Third</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.middle4">
+                <source>Item: Fourth</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer1">
+                <source>Footer: Left</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer2">
+                <source>Footer: Right</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

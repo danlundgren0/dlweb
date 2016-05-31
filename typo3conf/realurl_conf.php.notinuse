@@ -1,0 +1,74 @@
+<?php
+/*
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['init'] = array(
+    'enableCHashCache' => '1',
+    'appendMissingSlash' => 'ifNotFile',
+    'enableUrlDecodeCache' => '1',
+    'enableUrlEncodeCache' => '1'
+);
+*/
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['pagePath'] = array(
+    'type' => 'user',
+    'userFunc' => 'EXT:realurl/class.tx_realurl_advanced.php:&tx_realurl_advanced->main',
+    'spaceCharacter' => '-',
+    'languageGetVar' => 'L',
+    'expireDays' => '90',
+    'rootpage_id' => 1,
+    'disablePathCache' => '1',
+
+);
+
+//include_once \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('pxa_core') . 'Configuration/RealUrl/realurl_news_blog.php';
+//include_once \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('pxa_core') . 'Configuration/RealUrl/realurl_comments.php';
+//include_once \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('pxa_core') . 'Configuration/RealUrl/realurl_newsletter_subscription.php';
+/*
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['preVars']['language'] = array(
+        'GETvar' => 'L',
+        'valueMap' => array(
+                'da' => '3',
+                'fi' => '4',
+                'no' => '6',
+                'is' => '7',
+        ),
+        'noMatch' => 'bypass',
+);
+*/
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['_DOMAINS'] = array(
+    'encode' => array(
+        array(
+            'GETvar' => 'L',
+            'value' => '',
+            'useConfiguration' => '_DEFAULT',
+            'urlPrepend' => 'http://bergwall.se.hosting.vajer.se',
+        ),
+        /*
+        array(
+            'GETvar' => 'L',
+            'value' => '0',
+            'useConfiguration' => '_DEFAULT',
+            'urlPrepend' => 'http://www.nazar.se',
+        ),
+        */
+    ),
+    'decode' => array(
+        'bergwall.se.hosting.vajer.se' => array(
+            'GETvars' => array(
+                'L' => '0',
+            ),
+            'useConfiguration' => '_DEFAULT'
+        ),
+        /*
+        'www.nazar.dk' => array(
+            'GETvars' => array(
+                'L' => '3',
+            ),
+            'useConfiguration' => '_DEFAULT'
+        ),
+        */
+    )
+);
+
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['bergwall.se.hosting.vajer.se'] = $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'];
+//unset($TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']);
+
+?>
